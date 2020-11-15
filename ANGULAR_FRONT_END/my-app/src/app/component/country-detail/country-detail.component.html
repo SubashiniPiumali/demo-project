@@ -1,0 +1,66 @@
+<mat-dialog-content>
+    <br>
+    <table class="table">
+        <tr>
+            <th> Name </th>
+            <td> {{name}} </td>
+        </tr>
+        <tr>
+            <th> Alpha2Code </th>
+            <td> {{alpha2Code}} </td>
+        </tr>
+        <tr>
+            <th> Alpha3Code </th>
+            <td> {{alpha3Code}} </td>
+        </tr>
+        <tr>
+            <th> Capital </th>
+            <td> {{capital}} </td>
+        </tr>
+        <tr>
+            <th> Region </th>
+            <td> {{region}} </td>
+        </tr>
+        <tr>
+            <th> Sub Region </th>
+            <td> {{subregion}} </td>
+        </tr>
+        <tr>
+            <th> Population </th>
+            <td> {{population}} </td>
+        </tr>
+        <tr>
+            <th> Demonym </th>
+            <td> {{demonym}} </td>
+        </tr>
+        <tr>
+            <th> Area </th>
+            <td> {{area}} </td>
+        </tr>
+        <tr>
+            <th> Gini </th>
+            <td> {{gini}} </td>
+        </tr>
+        <tr>
+            <th> Timezones </th>
+            <td>
+                <!-- <ng-container *ngFor="let t of timezones"> -->
+                {{timezones}}
+                <!-- <br> -->
+                <!-- </ng-container> -->
+            </td>
+        </tr>
+        <tr>
+            <th> Currencies </th>
+            <td>
+                <div *ngFor="let c of currencies"> 
+                    code : {{ c.code}} | name : {{c.name}} | symbol : {{c.symbol}}
+                    <br>
+                </div>
+            </td>
+        </tr>
+    </table>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+    <button class="mat-raised-button btn btn-danger" (click)="close()">Close</button>
+</mat-dialog-actions>

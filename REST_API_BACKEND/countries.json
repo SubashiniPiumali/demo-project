@@ -1,0 +1,268 @@
+[
+    {
+       "name":"Sri Lanka",
+       "alpha2Code":"LK",
+       "alpha3Code":"LKA",
+       "capital":"Colombo",
+       "region":"Asia",
+       "subregion":"Southern Asia",
+       "population":20966000,
+       "demonym":"Sri Lankan",
+       "area":65610,
+       "gini":40.3,
+       "timezones":[
+           "UTC+05:30"
+       ],
+       "currencies": [
+           {
+               "code":"LKR",
+               "name":"Sri Lankan rupee",
+               "symbol":"Rs"
+           }
+          
+       ]
+
+  
+},
+
+
+{
+   
+   "name":"Afghanistan",
+   "alpha2Code":"AF",
+   "alpha3Code":"AFG",
+   "capital":"Kabul",
+   "region":"Asia",
+   "subregion":"Southern Asia",
+   "population":20966000,
+   "demonym":"Afghan ",
+   "area":652230,
+   "gini":27.8,
+   "timezones":[
+       "UTC+05:60","UTC+05:30"
+   ],
+   "currencies": [
+       {
+           "code":"AFN",
+           "name":"Afghan afghani",
+           "symbol":"؋"
+       }
+   ]
+
+
+},
+
+
+{
+   "name":"Åland Islands",
+   "alpha2Code":"AX",
+   "alpha3Code":"ALA",
+   "capital":"Mariehamn",
+   "region":"Europe",
+   "subregion":"Northern Europe",
+   "population":28875,
+   "demonym":"Ålandish",
+   "area":1580,
+   "gini":40.3,
+   "timezones":[
+       "UTC+07:50"
+   ],
+   "currencies": [
+       {
+           "code":"EUR",
+           "name":"Euro",
+           "symbol":"€"
+       }
+   ]
+
+ 
+},
+
+
+{
+   "name":"Costa Rica",
+   "alpha2Code":"CR",
+   "alpha3Code":"CRI",
+   "capital":"San José",
+   "region":"Americas",
+   "subregion":"Central America",
+   "population":4890379,
+   "demonym":"Costa Rican",
+   "area":51100,
+   "gini":50.7,
+   "timezones":[
+       "UTC+07:30"
+   ],
+   "currencies": [
+       {
+           "code":"CRC",
+           "name":"Costa Rican colón",
+           "symbol":"₡"
+       },
+       {
+        "code":"CDCP",
+        "name":"Rican colón",
+        "symbol":"₡"
+    }
+   ]
+
+ 
+},
+{
+   "name":"Ethiopia",
+   "alpha2Code":"ET",
+   "alpha3Code":"ETH",
+   "capital":"Addis Ababa",
+   "region":"Africa",
+   "subregion":"Eastern Africa",
+   "population":92206005,
+   "demonym":"Ethiopian",
+   "area":1104300,
+   "gini":29.8,
+   "timezones":[
+       "UTC+03:00"
+   ],
+   "currencies": [
+       {
+           "code":"ETB",
+           "name":"Ethiopian birr",
+           "symbol":"Br"
+       }
+   ]
+
+ 
+},
+
+{
+   "name":"Guatemala",
+   "alpha2Code":"GT",
+   "alpha3Code":"GTM",
+   "capital":"Guatemala City",
+   "region":"Americas",
+   "subregion":"Central America",
+   "population":16176133,
+   "demonym":"Guatemalan",
+   "area":108889,
+   "gini":55.9,
+   "timezones":[
+        "UTC-06:00"
+   ],
+   "currencies": [
+       {
+           "code":"GTQ",
+           "name":"Guatemalan quetza",
+           "symbol":"Q"
+       },
+       {
+           "code":"GRT",
+           "name":"Guatemalan",
+           "symbol":"QR"
+       }
+   ]
+
+
+},
+
+
+{
+
+"name":"Italy",
+"alpha2Code":"IT",
+"alpha3Code":"ITA",
+"capital":"Rome",
+"region":"Europe",
+"subregion":"Southern Europe",
+"population":60665551,
+"demonym":"Italian ",
+"area":36,
+"gini":27.8,
+"timezones":[
+   "UTC+01:00"
+],
+"currencies": [
+   {
+       "code":"EUR",
+       "name":"Euro",
+       "symbol":"€"
+   }
+]
+
+
+},
+
+
+{
+"name":"Kenya",
+"alpha2Code":"KE",
+"alpha3Code":"KEN",
+"capital":"Nairobi",
+"region":"Africa",
+"subregion":"Eastern Africa",
+"population":2847251000875,
+"demonym":"Kenyan",
+"area":580367,
+"gini":	47.7,
+"timezones":[
+   "UTC+03:00"
+],
+"currencies": [
+   {
+       "code":"KES",
+       "name":"Kenyan shilling",
+       "symbol":"Sh"
+   }
+]
+
+
+},
+
+
+{
+"name":"Martinique",
+"alpha2Code":"MQ",
+"alpha3Code":"MTQ",
+"capital":"Fort-de-France",
+"region":"Americas",
+"subregion":"Caribbean",
+"population":378243,
+"demonym":"French",
+"area":51100,
+"gini":50.7,
+"timezones":[
+   "UTC-04:00"
+],
+"currencies": [
+   {
+       "code":"EUR",
+       "name":"Euron",
+       "symbol":"€"
+   }
+]
+
+
+},
+{
+"name":"Nauru",
+"alpha2Code":"NR",
+"alpha3Code":"NRU",
+"capital":"Yaren",
+"region":"Oceania",
+"subregion":"Micronesia",
+"population":10084,
+"demonym":"Nauruan",
+"area":21,
+"gini":29.8,
+"timezones":[
+   "UTC+12:00"
+],
+"currencies": [
+   {
+       "code":"AUD",
+       "name":"Australian dollar",
+       "symbol":"$"
+   }
+]
+
+
+}
+]

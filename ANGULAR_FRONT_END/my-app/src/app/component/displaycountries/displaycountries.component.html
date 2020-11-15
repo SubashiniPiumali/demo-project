@@ -1,0 +1,108 @@
+<h3>Country Data</h3>
+<div >
+  
+
+<div fxLayout fxLayoutAlign="center center">
+  <mat-form-field fxFlex="40%">
+    <input matInput type="text" #searchParam (keyup)="doFilter(searchParam.value)" placeholder="Filter">
+  </mat-form-field>
+</div>
+
+
+<table mat-table [dataSource]="datasource" matSort class="mat-elevation-z8">
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="alpha2Code">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Alpha2Code </th>
+    <td mat-cell *matCellDef="let element"> {{element.alpha2Code}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="alpha3Code">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Alpha3Code </th>
+    <td mat-cell *matCellDef="let element"> {{element.alpha3Code}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="capital">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Capital </th>
+    <td mat-cell *matCellDef="let element"> {{element.capital}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="region">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Region </th>
+    <td mat-cell *matCellDef="let element"> {{element.region}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="subregion">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Sub Region </th>
+    <td mat-cell *matCellDef="let element"> {{element.subregion}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="population">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Population </th>
+    <td mat-cell *matCellDef="let element"> {{element.population}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="demonym">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Demonym </th>
+    <td mat-cell *matCellDef="let element"> {{element.demonym}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="area">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Area </th>
+    <td mat-cell *matCellDef="let element"> {{element.area}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="gini">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Gini </th>
+    <td mat-cell *matCellDef="let element"> {{element.gini}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="timezones">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Timezones </th>
+    <td mat-cell *matCellDef="let element">
+      <ng-container *ngFor="let t of element.timezones">
+        {{t}}
+        <br>
+      </ng-container>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="currencies">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Currencies </th>
+ 
+    <td mat-cell *matCellDef="let element">
+    <ng-container *ngFor="let c of element.currencies">
+      <ul>  
+        <li>    code : {{ c.code}}  </li>
+        <li>    name : {{c.name}}   </li>
+        <li>   symbol : {{c.symbol}} </li>
+      </ul>
+
+    
+  
+      </ng-container>
+     
+    </td>
+ 
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let element">
+      <button (click)="openDialog(element)" mat-raised-button class="btn btn-primary">
+        <span>Detail</span>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 15, 20]">
+</mat-paginator>
+</div>
